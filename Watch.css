@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.stopwatch {
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    gap: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+.buttons button {
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startPauseBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startPauseBtn:hover {
+    background-color: #45a049;
+}
+
+#splitBtn {
+    background-color: #FF9800;
+    color: white;
+}
+
+#splitBtn:hover {
+    background-color: #fb8c00;
+}
+
+#resetBtn {
+    background-color: #2196F3;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #1e88e5;
+}
+
+.splits {
+    font-size: 1.1em;
+    text-align: left; 
+    overflow-y: auto;
+    max-height: 150px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.split-item {
+    padding: 5px;
+    color: #555;
+}
+
+.split-item:nth-child(even) {
+    color: #ff5722;
+}
+
+.split-item:nth-child(odd) {
+    color: #2196F3;
+}
+.history {
+    font-size: 1em;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.history-item {
+    margin: 5px 0;
+    color: #666;
+}
+
+.split-record {
+    color: #2196F3;
+}
+
+.pause-record {
+    color: #FF5722;
+}
+#startPauseBtn {
+    background-color: white; 
+    color: black; 
+    border: 1px solid gray; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+  }
+  
+  .pause-color {
+    background-color: red; 
+    color: white; 
+  }
+  
+  .start-color {
+    background-color: green; 
+    color: white; 
+  }
+  
